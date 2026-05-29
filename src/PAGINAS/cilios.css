@@ -1,0 +1,124 @@
+/* CSS PADRONIZADO PARA SUBPÁGINAS */
+
+/* Container que garante o fundo bege em toda a tela */
+.page-container {
+    background-color: #F9F5F2; 
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Faixa Escura do Topo (Hero) */
+.hero-subpage {
+    background-color: #313131; 
+    padding: 60px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    width: 100%;
+}
+
+.hero-subpage h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.hero-subpage p {
+    color: #F7C6C7; /* Rosa da paleta */
+    font-size: 16px;
+}
+
+/* Botão de Voltar posicionado à esquerda no topo */
+.btn-voltar-hero {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Área de Conteúdo Centralizada */
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Moldura da Imagem Horizontal com Contorno Dourado Fino */
+.img-servico {
+    width: 90%;                    /* Responsivo para celular */
+    max-width: 650px;              /* Limita o tamanho horizontal no desktop */
+    aspect-ratio: 16 / 9;          /* Proporção horizontal para não cortar os cílios */
+    object-fit: cover;             /* Encaixe perfeito da imagem */
+    border-radius: 12px;           /* Cantos arredondados elegantes */
+    border: 2px solid #b58951;     /* Linha dourada fina idêntica ao modelo */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave profissional */
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* Seção de Texto */
+.text-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.text-section h3 {
+    font-size: 24px;
+    color: #313131;
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Exibição do Preço */
+.price-display {
+    font-size: 22px;
+    color: #313131;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.price-display strong {
+    font-size: 26px;
+    color: #313131;
+    font-weight: 800; 
+}
+
+/* Botão Agendar (Estilo padrão do site) */
+.btn-agendar {
+    background-color: #D4A373;
+    color: #FFFFFF !important;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+.btn-agendar:visited {
+    color: #FFFFFF !important;
+}
+
+.btn-agendar:hover { 
+    color: #000000; 
+    transform: translateX(10px); 
+    background-color: #b88a5d;
+}

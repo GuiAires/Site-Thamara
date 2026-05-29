@@ -1,0 +1,307 @@
+/* CONFIGURAÇÕES GERAIS */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background-color: #F9F5F2; color: #1A1A1A; }
+
+/* SEÇÃO HERO */
+.hero { 
+    display: flex; 
+    align-items: center; 
+    padding: 40px 60px; 
+    min-height: 450px; 
+    gap: 40px; 
+    position: relative; /* ESSENCIAL para o vídeo ficar no fundo */
+    overflow: hidden; 
+    background-color: #313131; 
+}
+
+/* --- ESTILO DO VÍDEO CORRIGIDO --- */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.video-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* MUDANÇA: Opacidade ajustada para melhor visibilidade */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* MUDANÇA: Degradê suave para a cor #313131 */
+    background: linear-gradient(
+        to bottom, 
+        rgba(49, 49, 49, 0.2) 0%, 
+        rgba(49, 49, 49, 0.6) 70%, 
+        #313131 100%
+    );
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2; /* Garante que a foto fique na frente do vídeo */
+    width: 100%;
+}
+
+.logo-quadrada { 
+    width: 350px; 
+    height: auto; 
+    display: block; 
+    border-radius: 12px; 
+    border: 4px solid #D4A373; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+}
+
+.hero-text h1 { color: #FFFFFF; font-size: 36px; text-transform: uppercase; }
+.hero-text p { color: #F7C6C7; font-size: 20px; }
+
+/* SEÇÃO SERVIÇOS */
+.servicos { padding: 60px 20px; }
+.servicos h2 { font-size: 32px; margin-bottom: 40px; margin-left: 10px; text-transform: uppercase; letter-spacing: 1px; color: #1A1A1A; }
+
+.servicos-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.biografia {
+    flex: 1;
+    max-width: 550px;
+}
+
+.biografia h3 {
+    font-size: 24px;
+    color: #D4A373;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.biografia p.bio-placeholder {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4A4A4A;
+    font-style: italic;
+}
+
+.servicos-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; }
+.card { width: 280px; background-color: #FFFFFF; border-radius: 4px; padding: 15px 20px; font-weight: 500; color: #1A1A1A; cursor: pointer; border: 1px solid #ddd; transition: all 0.3s ease-in-out; border-left: 0px solid #D4A373; text-decoration: none; display: block; }
+.card:hover { color: #D4A373; transform: scale(1.03) translateX(15px); border-left: 10px solid #D4A373; box-shadow: none; }
+
+.btn-container { margin-top: 15px; }
+.btn-agendar {
+    background-color: #D4A373;
+    color: #FFFFFF;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content; 
+}
+.btn-agendar:hover { color: #000000; transform: translateX(10px); }
+
+/* SEÇÃO MAPA */
+.mapa { padding: 60px 20px; }
+.iframe { width: 100% !important; height: 450px; border-radius: 12px; border: 4px solid #D4A373 !important; }
+
+/* SEÇÃO SUBPÁGINAS */
+.hero-subpage { background-color: #313131; padding: 40px; text-align: center; color: #FFFFFF; position: relative; }
+.hero-subpage h1 { font-size: 32px; text-transform: uppercase; margin-bottom: 10px; }
+.hero-subpage p { color: #F7C6C7; margin: 0; }
+.btn-voltar-hero { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; transition: 0.3s; }
+.btn-voltar-hero:hover { color: #cccccc; }
+.page-content { display: flex; flex-direction: column; align-items: center; padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+.img-lamination { width: 300px; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #D4A373; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin: 30px 0; }
+.text-section { text-align: center; margin-bottom: 25px; line-height: 1.6; color: #333; }
+.price-display { font-size: 24px; color: #313131; margin-bottom: 25px; }
+
+.btn-agendar.loading {
+    background-color: #A0A0A0;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* SEÇÃO LOADING SCREEN */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fce4ec; /* Cor rosê */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-circle {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(212, 175, 55, 0.2); 
+  border-top: 5px solid #d4af37; /* Dourado */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* SEÇÃO RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 992px) {
+    .hero {
+        padding: 40px;
+    }
+    .logo-quadrada {
+        width: 280px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        min-height: auto;
+        gap: 25px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .logo-quadrada {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .servicos {
+        padding: 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .biografia {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .biografia h3 {
+        font-size: 22px;
+    }
+
+    .biografia p.bio-placeholder {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .servicos-acoes {
+        width: 100%;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    
+    .card:hover {
+        transform: scale(1.02);
+        border-left: 0px solid #D4A373;
+    }
+
+    .btn-container {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-agendar {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .mapa {
+        padding: 40px 15px;
+    }
+
+    .iframe {
+        height: 350px;
+    }
+
+    .btn-voltar-hero {
+        position: static;
+        display: block;
+        transform: none;
+        margin-bottom: 15px;
+    }
+}
