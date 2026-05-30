@@ -4,6 +4,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Loading from "./Loading";
 import "./Lash_Lifting.css";
 
+import lash from "../assets/Lash.jpg";
+
 function LashLifting() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,10 +35,8 @@ function LashLifting() {
 
       {/* CONTEÚDO PRINCIPAL */}
       <main className="page-content">
-
-        {/* IMAGEM CORRIGIDA (GitHub Pages SAFE) */}
-        <img
-          src={`${import.meta.env.BASE_URL}Lash.jpg`}
+        <img 
+          src={lash}
           alt="Procedimento Lash Lifting"
           className="img-lash-lifting"
         />
