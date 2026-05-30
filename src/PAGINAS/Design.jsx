@@ -28,11 +28,11 @@ function Design() {
       
       <main className="page-content">
         <div className="image-wrapper">
-          <img 
-            src="/Disgn_personalizado.jpeg" 
-            alt="Design de Sobrancelhas" 
-            className="img-servico" 
-          />
+         <img
+          src={`${import.meta.env.BASE_URL}Disgn_personalizado.jpeg`}
+          alt="Design de Sobrancelhas"
+          className="img-servico"
+        />
         </div>
         
         <div className="text-section">

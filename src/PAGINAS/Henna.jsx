@@ -17,22 +17,20 @@ function Henna() {
       <main className="page-content">
         
         {/* IMAGEM HORIZONTAL COM O CONTORNO DOURADO IDENTICO AO EXEMPLO */}
-        <img 
-          src="/Designer_Henna.jpeg" 
-          alt="Henna ou Tintura" 
-          className="img-lamination" 
+        <img
+          src={`${import.meta.env.BASE_URL}Designer_Henna.jpeg`}
+          alt="Henna ou Tintura"
+          className="img-lamination"
           style={{
             width: "90%",
-            maxWidth: "650px",          // Largura ideal para manter o formato horizontal
+            maxWidth: "650px",
             display: "block",
             margin: "30px auto 25px auto",
-            aspectRatio: "16 / 9",        // Garante o formato horizontal (retangular) sem cortar os lados
-            objectFit: "cover",          // Mantém o preenchimento perfeito das duas sobrancelhas
-            borderRadius: "12px",        // Arredondamento suave dos cantos
-            
-            // CONFIGURAÇÃO DO CONTORNO DOURADO IGUAL À FOTO DA MODELO:
-            border: "3px solid #b58951", // Linha fina dourada idêntica ao contorno da imagem de exemplo
-            boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15)" // Sombra suave para dar profundidade na página
+            aspectRatio: "16 / 9",
+            objectFit: "cover",
+            borderRadius: "12px",
+            border: "3px solid #b58951",
+            boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.15)"
           }}
         />
 

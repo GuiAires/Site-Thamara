@@ -41,10 +41,10 @@ function Home() {
 
         <div className="hero-content">
           <img
-            src="./Foto_Profissional_Tha.png"
-            alt="Thamara Aires"
-            className="logo-quadrada"
-          />
+          src={`${import.meta.env.BASE_URL}Foto_Profissional_Tha.png`}
+          alt="Thamara Aires"
+          className="logo-quadrada"
+        />
           <div className="hero-text">
             <h1>Thamara Aires</h1>
             <p>Especialista em cílios e sobrancelhas</p>

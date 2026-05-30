@@ -31,10 +31,10 @@ function Cilíos() {
 
       {/* CONTEÚDO CENTRALIZADO */}
       <main className="page-content">
-        <img 
-          src="/Extensão_de_Cílios.png" 
-          alt="Extensão de Cílios" 
-          className="img-servico" 
+        <img
+          src={`${import.meta.env.BASE_URL}Extensão_de_Cílios.png`}
+          alt="Extensão de Cílios"
+          className="img-servico"
         />
         
         <section className="text-section">
