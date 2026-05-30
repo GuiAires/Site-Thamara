@@ -3,7 +3,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import videoHero from "./assets/Trabalho-GIF.mp4";
+import videoHero from "./assets/Trabalho-Gif.mp4";
 
 import Loading from "./PAGINAS/Loading";
 import Cilios from "./PAGINAS/Cilios";
