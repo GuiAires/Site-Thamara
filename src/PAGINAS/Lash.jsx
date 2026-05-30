@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Loading from "./Loading"; // Importação do componente padrão de Loading
-import "./Lash_Lifting.css"; 
+import Loading from "./Loading";
+import "./Lash_Lifting.css";
 
 function LashLifting() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,21 +21,24 @@ function LashLifting() {
 
   return (
     <div className="container-page">
-      {/* HEADER ESCURO PADRONIZADO */}
+
+      {/* HEADER PADRÃO */}
       <header className="hero-subpage">
-        <Link to="/" className="btn-voltar-hero">← Voltar</Link>
+        <Link to="/" className="btn-voltar-hero">
+          ← Voltar
+        </Link>
         <h1>Lash Lifting</h1>
         <p>Especialista em cílios e sobrancelhas</p>
       </header>
 
-      {/* CONTEÚDO CENTRALIZADO */}
+      {/* CONTEÚDO PRINCIPAL */}
       <main className="page-content">
-        
-        {/* Imagem do procedimento com o caminho e classe corretos */}
-        <img 
-          src="/Lash.jpg" 
-          alt="Procedimento Lash Lifting" 
-          className="img-lash-lifting" 
+
+        {/* IMAGEM CORRIGIDA (GitHub Pages SAFE) */}
+        <img
+          src={`${import.meta.env.BASE_URL}Lash.jpg`}
+          alt="Procedimento Lash Lifting"
+          className="img-lash-lifting"
         />
 
         <div className="text-section">
@@ -49,16 +52,17 @@ function LashLifting() {
           </p>
         </div>
 
-        {/* BOTÃO AGENDAR */}
-        <a 
-          href="https://wa.me/5511979654397" 
-          target="_blank" 
-          className="btn-agendar" 
+        {/* BOTÃO WHATSAPP */}
+        <a
+          href="https://wa.me/5511979654397"
+          target="_blank"
           rel="noreferrer"
+          className="btn-agendar"
         >
-          <IoLogoWhatsapp size={20} /> 
+          <IoLogoWhatsapp size={20} />
           Agendar Agora
         </a>
+
       </main>
     </div>
   );
