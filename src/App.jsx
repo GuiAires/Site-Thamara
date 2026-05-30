@@ -3,6 +3,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { useEffect, useState } from "react";
 import "./App.css";
 
+import videoHero from "./assets/Trabalho-GIF.mp4";
+
 import Loading from "./PAGINAS/Loading";
 import Cilios from "./PAGINAS/Cilios";
 import Design from "./PAGINAS/Design";
@@ -32,7 +34,7 @@ function Home() {
             preload="auto"
             className="video-fundo"
           >
-            <source src="/Trabalho-Gif.mp4" type="video/mp4" />
+            <source src={videoHero} type="video/mp4" />
           </video>
           <div className="video-overlay"></div>
         </div>
