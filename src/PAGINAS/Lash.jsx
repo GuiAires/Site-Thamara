@@ -33,7 +33,7 @@ function LashLifting() {
         
         {/* Imagem do procedimento com o caminho e classe corretos */}
         <img 
-          src="public/Lash.jpg" 
+          src="/Lash.jpg" 
           alt="Procedimento Lash Lifting" 
           className="img-lash-lifting" 
         />

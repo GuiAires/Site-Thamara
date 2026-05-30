@@ -14,7 +14,7 @@ function Lamination() {
       {/* CONTEÚDO PRINCIPAL */}
       <main className="page-content">
         <img 
-          src="public/Brow_Lamination.png" 
+          src="/Brow_Lamination.png" 
           alt="Procedimento de Brow Lamination" 
           className="img-lamination" 
         />

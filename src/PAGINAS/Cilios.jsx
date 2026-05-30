@@ -32,7 +32,7 @@ function Cilíos() {
       {/* CONTEÚDO CENTRALIZADO */}
       <main className="page-content">
         <img 
-          src="public/Extensão_de_Cílios.png" 
+          src="/Extensão_de_Cílios.png" 
           alt="Extensão de Cílios" 
           className="img-servico" 
         />

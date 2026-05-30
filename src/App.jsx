@@ -41,7 +41,7 @@ function Home() {
 
         <div className="hero-content">
           <img
-            src="public/Foto_Profissional_Tha.png"
+            src="./Foto_Profissional_Tha.png"
             alt="Thamara Aires"
             className="logo-quadrada"
           />

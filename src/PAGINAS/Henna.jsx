@@ -18,7 +18,7 @@ function Henna() {
         
         {/* IMAGEM HORIZONTAL COM O CONTORNO DOURADO IDENTICO AO EXEMPLO */}
         <img 
-          src="public/Designer_Henna.jpeg" 
+          src="/Designer_Henna.jpeg" 
           alt="Henna ou Tintura" 
           className="img-lamination" 
           style={{

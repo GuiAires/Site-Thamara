@@ -29,7 +29,7 @@ function Design() {
       <main className="page-content">
         <div className="image-wrapper">
           <img 
-            src="public/Disgn_personalizado.jpeg" 
+            src="/Disgn_personalizado.jpeg" 
             alt="Design de Sobrancelhas" 
             className="img-servico" 
           />
